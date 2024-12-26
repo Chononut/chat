@@ -1,0 +1,36 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #343a40;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #ffffff !important;
+  }
+  
+  .chatroom-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+  }
+  
+  .chatroom-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button, input, select {
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      text-align: center;
+    }
+  }
+  
