@@ -4,7 +4,7 @@ npm install
 npm run dev
 ```
 
-所有数据均可通过 API 调用检索 https://cs571.org/api/s24/hw6/ 。下面提供了 API 的简要概述。详细信息请参考API_DOCUMENTATION.md 。
+所有数据均可通过 API 调用检索 https://cs571.org/rest/f24/hw6/ 。下面提供了 API 的简要概述。详细信息请参考API_DOCUMENTATION.md 。
 | Method | URL | Purpose | Return Codes |
 | --- | --- | --- | --- |
 | `GET`| `/chatrooms` | Get all chatrooms. | 200, 304 |
