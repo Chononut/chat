@@ -12,7 +12,7 @@ export default function BadgerChatroom({ name }) {
     const pageSize = 25; // 每页消息数量
 
     const loadMessages = useCallback(() => {
-        fetch(`https://cs571.org/api/s24/hw6/messages?chatroom=${name}&page=1`, {
+        fetch(`https://cs571.org/rest/f24/hw6/messages?chatroom=${name}&page=1`, {
             headers: {
                 "X-CS571-ID": "bid_fa7b6e58f1e6e815b24f65eb00bee192a12b3ae27a632ad5cb809b460752b68e",
             },
@@ -29,7 +29,7 @@ export default function BadgerChatroom({ name }) {
                 return;
             }
 
-            fetch(`https://cs571.org/api/s24/hw6/messages?chatroom=${name}&page=1`, {
+            fetch(`https://cs571.org/rest/f24/hw6/messages?chatroom=${name}&page=1`, {
                 method: "POST",
                 headers: {
                     "X-CS571-ID": "bid_fa7b6e58f1e6e815b24f65eb00bee192a12b3ae27a632ad5cb809b460752b68e",
@@ -49,7 +49,7 @@ export default function BadgerChatroom({ name }) {
 
     const deleteMessage = useCallback(
         (id) => {
-            fetch(`https://cs571.org/api/s24/hw6/messages?id=${id}`, {
+            fetch(`https://cs571.org/rest/f24/hw6/messages?id=${id}`, {
                 method: "DELETE",
                 headers: {
                     "X-CS571-ID": "bid_fa7b6e58f1e6e815b24f65eb00bee192a12b3ae27a632ad5cb809b460752b68e",
