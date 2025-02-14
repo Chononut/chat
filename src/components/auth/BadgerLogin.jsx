@@ -18,7 +18,7 @@ export default function BadgerLogin() {
             return // 满足条件，提前结束函数，防止继续执行
         }
 
-        fetch("https://cs571.org/api/s24/hw6/login", {
+        fetch("https://cs571.org/rest/f24/hw6/login", {
             method:"POST",
             headers:{
                 "X-CS571-ID":'bid_fa7b6e58f1e6e815b24f65eb00bee192a12b3ae27a632ad5cb809b460752b68e',
