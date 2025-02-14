@@ -14,7 +14,7 @@ function BadgerApp() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('https://cs571.org/api/s24/hw6/chatrooms', {
+    fetch('https://cs571.org/rest/f24/hw6/chatrooms', {
       headers: { 
         "X-CS571-ID": 'bid_fa7b6e58f1e6e815b24f65eb00bee192a12b3ae27a632ad5cb809b460752b68e' 
       }
